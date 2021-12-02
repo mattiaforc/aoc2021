@@ -18,9 +18,3 @@ fun main() {
     println(part1(input))
     println(part2(input))
 }
-
-fun List<Int>.increments() : Int {
-    return this
-        .zipWithNext()
-        .fold(0) { acc, pair -> if (pair.second > pair.first) acc + 1 else acc }
-}
